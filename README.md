@@ -46,3 +46,11 @@ This is a Python script to generate and manage promotional codes with a 60% disc
     Expired promo code
     Expired promo code
     ```
+
+## Approach and Challenges
+Th promo code system was implemented using Python's `uuid` module to generate unique promo codes. The `PromoCodeSystem` class maintains a dictionary to store promo code details, including the discount and usage limit. The `apply_promo_code` method validates the promo code, checks its usage count, and applies the discount if the promo code is valid.
+
+### Challenges
+- Ensuring that promo codes are unique and have a consistent format.
+- Handling the state of each promo code, specifically tracking the usage count and managing expired codes.
+- Providing informative feedback for invalid and expired promo codes.

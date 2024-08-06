@@ -31,5 +31,8 @@ print(f"Generated Promo code: {promo_code}")
 
 # Test by applying the promo code multiple times
 for i in range(10):
-    result = promo_system.apply_promo_code(promo_code)
+    if i == 3:
+        result = promo_system.apply_promo_code("promo_code")
+    else:
+        result = promo_system.apply_promo_code(promo_code)
     print(result)
